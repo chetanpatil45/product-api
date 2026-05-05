@@ -1,5 +1,10 @@
 # Product API
 
+- Created by Java & Spring Boot.
+- Maintained MVC (Model View Controller) architecture.
+- Used Lombok & Swagger
+- 
+
 ### CRUD APIs
 - **Create :** create resource
 - **Read   :** read resource
