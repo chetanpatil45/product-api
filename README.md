@@ -1,6 +1,10 @@
 # Product API
 
 ### CRUD APIs
+- **Create :** create resource
+- **Read   :** read resource
+- **Update :** update 
+- **Delete :** delete
 
 
 ### Add Product - POSTMAN
