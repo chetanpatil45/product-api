@@ -3,6 +3,7 @@ package com.product_api.controllers;
 import com.product_api.dto.ProductDTO;
 import com.product_api.entity.Product;
 import com.product_api.service.ProductService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,11 @@ public class ProductController {
 
     @PostMapping("/add")
     public ResponseEntity<Product> addProduct(@RequestBody ProductDTO product){
-        return null;
+        Product product1 = productService.addProduct(product);
+        if (product1 != null){
+            return ResponseEntity.ok(product1);
+        }
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST.value()).build();
     }
 
     @GetMapping("/products")
