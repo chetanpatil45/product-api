@@ -29,7 +29,7 @@ public class ProductController {
     }
 
     @GetMapping("/products")
-    public List<Product> getAll(){
-        return productService.getAll();
+    public ResponseEntity<List<Product>> getAll(){
+        return ResponseEntity.ok(productService.getAll());
     }
 }
