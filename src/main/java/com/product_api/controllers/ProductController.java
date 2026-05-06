@@ -32,4 +32,11 @@ public class ProductController {
     public ResponseEntity<List<Product>> getAll(){
         return ResponseEntity.ok(productService.getAll());
     }
+
+    @GetMapping("/product/{id}")
+    public ResponseEntity<Product> getProduct(@RequestParam Long id){
+        return null;
+    }
+
+
 }
