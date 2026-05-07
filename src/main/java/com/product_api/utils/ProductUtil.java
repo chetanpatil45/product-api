@@ -9,8 +9,8 @@ public class ProductUtil {
     public Product toProduct(ProductDTO productDTO){
         Product product = new Product();
         product.setName(productDTO.getName());
-        product.setPrice(product.getPrice());
-        product.setQty(product.getQty());
+        product.setPrice(productDTO.getPrice());
+        product.setQty(productDTO.getQty());
 
         return product;
     }

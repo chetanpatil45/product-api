@@ -9,6 +9,6 @@ import lombok.*;
 @NoArgsConstructor
 public class ProductDTO {
     private String name;
-    private double price;
-    private int qty;
+    private Double price;
+    private Integer qty;
 }

@@ -13,7 +13,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api")
 public class ProductController {
-
     private final ProductService productService;
 
     public ProductController(ProductService productService) {
@@ -35,7 +34,7 @@ public class ProductController {
     }
 
     @GetMapping("/product/{id}")
-    public ResponseEntity<Product> getProduct(@RequestParam Long id){
+    public ResponseEntity<Product> getProduct(@PathVariable Long id){
         Optional<Product> product = productService.get(id);
 
         if (product.isEmpty()) {
