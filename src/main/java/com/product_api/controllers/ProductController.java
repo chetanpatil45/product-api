@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
@@ -35,7 +36,12 @@ public class ProductController {
 
     @GetMapping("/product/{id}")
     public ResponseEntity<Product> getProduct(@RequestParam Long id){
-        return null;
+        Optional<Product> product = productService.get(id);
+
+        if (product.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST.value()).build();
+        }
+        return ResponseEntity.ok(product.get());
     }
 
 
