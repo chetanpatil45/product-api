@@ -41,4 +41,8 @@ public class ProductService {
                     return repository.save(existing);
                 }).orElse(null);
     }
+
+    public boolean deleteProduct(Long id) {
+        return false;
+    }
 }
