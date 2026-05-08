@@ -43,6 +43,12 @@ public class ProductService {
     }
 
     public boolean deleteProduct(Long id) {
+        Optional<Product> product = repository.findById(id);
+        if (product.isPresent()){
+            repository.delete(product.get());
+            return true;
+        }
+        
         return false;
     }
 }
