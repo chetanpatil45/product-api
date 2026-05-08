@@ -30,4 +30,15 @@ public class ProductService {
     public Optional<Product> get(long id){
         return repository.findById(id);
     }
+
+    public Product updateProduct(ProductDTO productDTO, Long id){
+        return repository.findById(id)
+                .map((existing)->{
+                    existing.setName(productDTO.getName());
+                    existing.setQty(productDTO.getQty());
+                    existing.setPrice(productDTO.getPrice());
+
+                    return repository.save(existing);
+                }).orElse(null);
+    }
 }
