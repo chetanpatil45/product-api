@@ -45,7 +45,12 @@ public class ProductController {
 
     @PutMapping("/update/{id}")
     public ResponseEntity<Product> updateProduct(@RequestBody ProductDTO productDTO, @PathVariable Long id){
-        return null;
+        Product updatedProduct = productService.updateProduct(productDTO, id);
+        if (updatedProduct != null){
+            return ResponseEntity.status(HttpStatus.ACCEPTED.value()).body(updatedProduct);
+        }
+
+        return ResponseEntity.badRequest().build();
     }
 
 
