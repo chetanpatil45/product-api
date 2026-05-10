@@ -23,9 +23,11 @@
 
 | Method | Endpoint | Description | Auth |
 | :--- | :--- | :--- | :--- |
-| `GET` | `/api/users` | Retrieve all users | Yes |
-| `POST` | `/api/login` | Log in a user | No |
-| `DELETE` | `/api/users/:id` | Delete a specific user | Admin |
+| `GET` | `/api/product/add` | Add New product. | Yes |
+| `GET` | `/api/product/{id}` | Get Product by Id. | No |
+| `POST` | `/api/products` | Get All Products | Admin |
+| `PUT` | `/api/product/update/{id}` | Update Product with it's Id. | Admin |
+| `DELETE` | `/api/product/delete/{id}` | Delete Product by it's Id. | Admin |
 
 
    
