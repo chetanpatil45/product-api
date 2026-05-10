@@ -23,11 +23,11 @@
 
 | Method | Endpoint | Description | Auth |
 | :--- | :--- | :--- | :--- |
-| `GET` | `/api/product/add` | Add New product. | Yes |
+| `GET` | `/api/product/add` | Add New product. | No |
 | `GET` | `/api/product/{id}` | Get Product by Id. | No |
-| `POST` | `/api/products` | Get All Products | Admin |
-| `PUT` | `/api/product/update/{id}` | Update Product with it's Id. | Admin |
-| `DELETE` | `/api/product/delete/{id}` | Delete Product by it's Id. | Admin |
+| `POST` | `/api/products` | Get All Products | No |
+| `PUT` | `/api/product/update/{id}` | Update Product with it's Id. | No |
+| `DELETE` | `/api/product/delete/{id}` | Delete Product by it's Id. | No |
 
 
    
