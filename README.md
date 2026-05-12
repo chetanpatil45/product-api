@@ -33,3 +33,7 @@
    
 ### Add Product - POSTMAN
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/424dcbaf-6685-44d7-8287-7443bdd120f5" />
+
+### Swagger UI - API DOCUMENTATION
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/539b2d02-2514-4c76-8723-50fa701f9d9a" />
+
