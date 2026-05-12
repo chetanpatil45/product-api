@@ -3,6 +3,7 @@ package com.product_api.controllers;
 import com.product_api.dto.ProductDTO;
 import com.product_api.entity.Product;
 import com.product_api.service.ProductService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
+@Tag(name = "Product")
 public class ProductController {
     private final ProductService productService;
 
