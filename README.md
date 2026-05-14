@@ -201,22 +201,7 @@ http://localhost:8080/swagger-ui/
 ---
 
 # 👨‍💻 Author
-
+Chetan Bachchhav
 Developed using Java & Spring Boot for learning and backend API development practice.
 
 ---
-
-# ⭐ Future Improvements
-
-* Add Validation
-* Add Exception Handling
-* Implement Authentication & Authorization
-* Add Pagination & Sorting
-* Dockerize the Application
-* Deploy on Cloud
-
----
-
-# 📄 License
-
-This project is open-source and available under the **MIT License**.
