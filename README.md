@@ -69,11 +69,13 @@ Update your `application.properties` file:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/productdb
-spring.datasource.username=root
-spring.datasource.password=your_password
+spring.datasource.username=<username>
+spring.datasource.password=<password>
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
+server.port=8081
 ```
 
 ---
@@ -83,7 +85,7 @@ spring.jpa.show-sql=true
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/product-api.git
+git clone https://github.com/bachchhavchetan45/product-api.git
 ```
 
 ### Navigate to project directory
@@ -123,7 +125,7 @@ mvn spring-boot:run
 
 ---
 
-# 📬 Sample Request Body
+# 📬 Sample Request Body - To create new Product
 
 ```json
 {
